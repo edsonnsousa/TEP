@@ -1,0 +1,29 @@
+<div *ngIf="task">
+  <h2> Informações</h2>
+  
+  <div>
+    <label>
+      <span>ID</span>: {{ task.id }}
+    </label>
+  </div>
+
+  <div>
+    <label>
+        <span>Descrição</span>: {{ task.description }}
+    </label>
+  </div>
+
+  <div>
+    <label>
+        <span>Responsavel</span>: {{ task.person_name }}
+        <input [(ngModel)]="task.person_name" placeholder="Responsible" />
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <span>Porcentagem(%)</span>: {{ task.percentage }}
+    </label>
+  </div>
+  <button (click)="goBack()">Voltar</button>
+</div>

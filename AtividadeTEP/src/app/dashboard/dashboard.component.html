@@ -1,0 +1,9 @@
+<h3>Principais Atividades</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let task of tasks" class="col-1-4" routerLink="/detail/{{task.id}}">
+    <div class="module task">
+      <h4>{{task.description}}</h4>
+      <h3>{{task.person_name}}</h3>
+    </div>
+  </a>
+</div>
